@@ -10,6 +10,7 @@ from streamlit_extras.add_vertical_space import add_vertical_space
 import torch
 
 device = torch.device('cuda:0' if torch.cuda.is_available else 'cpu')
+print(device)
 
 # Vertical sidebar contents
 with st.sidebar: 
