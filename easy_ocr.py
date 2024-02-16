@@ -7,10 +7,10 @@ import numpy as np #Image Processing
 import cv2
 import math
 from streamlit_extras.add_vertical_space import add_vertical_space
-import torch
+#import torch
 
-device = torch.device('cuda:0' if torch.cuda.is_available else 'cpu')
-print(device)
+#device = torch.device('cuda:0' if torch.cuda.is_available else 'cpu')
+#print(device)
 
 # Vertical sidebar contents
 with st.sidebar: 
@@ -69,10 +69,10 @@ def calculate_rotation_angle(bounding_boxes):
 
 #@st.cache_data 
 #def load_model(): 
-if device == "cpu":
-    reader = ocr.Reader(['en'], gpu=False)
-else:
-    reader = ocr.Reader(['en'], gpu=True)
+#if device == "cpu":
+reader = ocr.Reader(['en'], gpu=False)
+#else:
+    #reader = ocr.Reader(['en'], gpu=True)
 #    return reader 
 #reader = load_model() #load model
 
