@@ -22,7 +22,7 @@ with st.sidebar:
     st.write('❤️🤗   Made by Anju S Mohan   🤗❤️')
     
 # Streamlit Title  
-st.title(":bookmark: Text Extraction from Images") #title
+st.title(":notebooks: Text Extraction from Images :bookmark:") #title
 
 #subtitle
 st.markdown("")
@@ -141,5 +141,5 @@ if image is not None:
 else:
     st.write("Upload an Image")
 
-st.caption("**GitHub** [@anjusm](https://github.com/anjusm) ❤️ ")
+st.caption("**GitHub: ** [@anjusm](https://github.com/anjusm) ❤️ ")
 
