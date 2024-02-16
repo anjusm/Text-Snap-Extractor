@@ -1,4 +1,4 @@
-torch==2.2.0+cu118
+torch==2.2.0
 easyocr==1.6.2
 imageio==2.34.0
 imutils==0.5.4
