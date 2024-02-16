@@ -69,10 +69,10 @@ def calculate_rotation_angle(bounding_boxes):
 
 #@st.cache_data 
 #def load_model(): 
-if device == "cuda:0" then:
-    reader = ocr.Reader(['en'], gpu=True)
-else:
+if device == "cpu":
     reader = ocr.Reader(['en'], gpu=False)
+else:
+    reader = ocr.Reader(['en'], gpu=True)
 #    return reader 
 #reader = load_model() #load model
 
