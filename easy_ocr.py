@@ -141,5 +141,5 @@ if image is not None:
 else:
     st.write("Upload an Image")
 
-st.caption("**GitHub: ** [@anjusm](https://github.com/anjusm) ❤️ ")
+st.caption("**GitHub:** [@anjusm](https://github.com/anjusm) ❤️ ")
 
