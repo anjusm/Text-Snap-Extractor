@@ -141,5 +141,5 @@ if image is not None:
 else:
     st.write("Upload an Image")
 
-st.caption("Made with ❤️ by @anjusmohan")
+st.caption("Made with ❤️ by [@anjusm](https://streamlit.io/)")
 
