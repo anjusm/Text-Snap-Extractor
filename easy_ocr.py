@@ -22,7 +22,7 @@ with st.sidebar:
     st.write('❤️🤗   Made by Anju S Mohan   🤗❤️')
     
 # Streamlit Title  
-st.title(":notebook: Text Extraction from Images :bookmark:") #title
+st.title(":books: Text Extraction from Images :bookmark:") #title
 
 #subtitle
 st.markdown("")
