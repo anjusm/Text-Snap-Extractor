@@ -7,6 +7,9 @@ import numpy as np #Image Processing
 import cv2
 import math
 from streamlit_extras.add_vertical_space import add_vertical_space
+import torch
+
+device = torch.device('cuda:0' if torch.cuda.is_available else 'cpu')
 
 # Vertical sidebar contents
 with st.sidebar: 
@@ -63,10 +66,14 @@ def calculate_rotation_angle(bounding_boxes):
     average_angle = np.mean(angles)
     return math.degrees(average_angle)
 
-@st.cache_data 
-def load_model(): 
-    reader = ocr.Reader(['en'], gpu=True, model_storage_directory='.')
-    return reader 
+#@st.cache_data 
+#def load_model(): 
+if device == "cuda:0" then:
+    reader = ocr.Reader(['en'], gpu=True)
+else:
+    reader = ocr.Reader(['en'], gpu=False)
+#    return reader 
+#reader = load_model() #load model
 
 # Define the function to detect text in an image
 def detect_text(image, thre = 0):
@@ -91,8 +98,6 @@ def detect_text(image, thre = 0):
             result.append(text)   
             #print(text, bbox)     
     return result, max_box
-
-reader = load_model() #load model
 
 if image is not None:
 
