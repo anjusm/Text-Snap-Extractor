@@ -2,4 +2,4 @@
 Easy OCR extractor from images
 
 Web Application
-https://snap-text-ocr-extractor-gm6encvc4zdjrqfz7czvzf.streamlit.app/
+https://easy-ocr-detector-kvpxych4t2mxqrvm7zyvry.streamlit.app/
